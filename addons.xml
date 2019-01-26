@@ -5,9 +5,9 @@
 <addon id="repository.daawo" name="Daawo Tv Addon Repository" version="1.0" provider-name="DaawoTv">
 	<extension point="xbmc.addon.repository" name="Daawo Tv Addon Repository">	
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/xamarcade/Daawo-repo/master/zips</datadir>
+			<info compressed="false">https://github.com/xamarcade/DaawoTV/blob/master/Daawo-repo/addons.xml</info>
+			<checksum>https://github.com/xamarcade/DaawoTV/blob/master/Daawo-repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/xamarcade/DaawoTV/tree/master/Daawo-repo/zips</datadir>
 		</dir>
 		
 		<info compressed="false">https://daawotv1.000webhostapp.com/filer/zips/addons.xml</info>
@@ -22,8 +22,6 @@
 	</extension>
 	
 </addon>	
-	
-	
 	
 	
 <addon id="plugin.video.DaawoTV"
