@@ -61,12 +61,8 @@
 		<dir>		
 			<info compressed="false">https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/xamarcade/Daawo-repo/tree/master/zips</datadir>
+			<datadir zip="true">https://github.com/xamarcade/Daawo-repo/blob/master/zips</datadir>
 		</dir>
-		
-			<info compressed="false">https://daawotv1.000webhostapp.com/addons/addons.xml</info>
-			<checksum>https://daawotv1.000webhostapp.com/addons/addons.xml.md5</checksum>
-			<datadir zip="true">https://daawotv1.000webhostapp.com/addons</datadir>
 	</extension>
 	
 	<extension point="xbmc.addon.metadata">
