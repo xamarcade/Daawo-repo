@@ -1,0 +1,114 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.DaawoTV" name="Daawo TV" version="1.3.0" provider-name="Daawo TV">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.urlresolver" version="1.0.0"/>
+		<import addon="plugin.video.youtube" version="2.9.2"/>
+	</requires>
+  
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+		<summary>dramasonline.com XBMC Client</summary>
+		<description>Watch dramasonline.com on your XBMC. This plugin fetches the video sources from dramasonline.com and play on XBMC compatible plateforms</description>
+		<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+	
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	
+	<extension point="xbmc.python.module" library="lib" />
+	
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+    
+	<extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en">Proxy for f4m</summary>
+	<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+	</extension>
+</addon>
+
+
+<addon id="plugin.video.youtube" name="YouTube" version="6.2.3" provider-name="bromix">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+        <provides>video</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="resources/lib/startup.py" start="login"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <summary lang="en_GB">Plugin for YouTube</summary>
+        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+        <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
+        <website>https://www.youtube.com</website>
+        <email>ytplugin at datanet dot ws</email>
+        <source>https://github.com/jdf76/plugin.video.youtube</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+</addon>
+
+
+<addon id="repository.daawo" name="Daawo Tv Addon Repository" version="1.0" provider-name="DaawoTv">
+
+	<extension point="xbmc.addon.repository" name="Daawo Tv Addon Repository">
+		<dir>		
+			<info compressed="false">https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/xamarcade/Daawo-repo/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/xamarcade/Daawo-repo/tree/master/zips</datadir>
+		</dir>
+		
+			<info compressed="false">https://daawotv1.000webhostapp.com/addons/addons.xml</info>
+			<checksum>https://daawotv1.000webhostapp.com/addons/addons.xml.md5</checksum>
+			<datadir zip="true">https://daawotv1.000webhostapp.com/addons</datadir>
+	</extension>
+	
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for DaawoTv</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
